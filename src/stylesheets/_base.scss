@@ -1,0 +1,166 @@
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ 
+    font-size: 12px; margin:0; padding:0; 
+    font: 12px 'Microsoft Yahei',Tahoma,Simsun;
+}
+
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+label {    cursor: default;}
+a {text-decoration:none;color: #444;}
+a:link, a:visited {
+    outline: 0;
+}
+img{
+  background: url("../assets/yyw.e128806.png") no-repeat;
+  background-size: auto 100%;
+}
+body, dd, dl, dt, h1, h2, h3, h4, h5, input, li, p, ul {
+  font-weight: 400;
+  font-family: Microsoft YaHei,tahoma,arial;
+}
+* {
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+b, h1, h2, h3 {
+    font-weight: 400;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/*公共类*/
+.cont {  /*内容、版心 提取 */
+    width: 1198px;
+    margin:0 auto;
+}
+.w-max {  width: 1200px; }
+.w-min {
+    width: 200px;
+}
+.w-mid { width: 980px;}
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.overflow {
+    overflow: hidden;
+    _zoom: 1;
+}
+.bold {    font-weight: 700;}
+/*color*/
+
+.c300 {    color: #78b300;}
+.cfff {  color: #fff; }
+.c333 {    color: #333;}
+.c666 {    color: #666;}
+.c000 {    color: #000;}
+.cf40 {    color: #f40;}
+.c444 {    color: #444;}
+.c999 {    color: #999;}
+.cred {    color: red;}
+.c93c {    color: #e3393c;}
+.ce54649 {    color: #e54649;}
+.c78b300 {    color: #78b300;}
+.cf60 {    color: #F60;}
+.cblue {    color: #00f;}
+.dis-ile, .dib, .inblock{  display:inline-block;}
+
+.dis-block, .db { display:block;}
+
+.center{ text-align: center; }
+
+.rel, .rela{ position:relative; }
+
+.abs {   position: absolute;}
+
+.ftc {text-align: center;}
+
+.textR {    text-align: right;}
+
+.through {    text-decoration: line-through; }
+
+//display: flex
+  .disF{       display:flex; }
+  .dis-ileF {  display: inline-flex; }// 将对象作为内联块级弹性伸缩盒显示
+  .fd-r {  flex-direction: row ; }// 主轴水平方向，起点在左端
+  .fd-rr { flex-direction:row-reverse; }// 主轴水平方向，起点在右端
+  .fd-c {  flex-direction:column ; }// 主轴垂直方向，起点在上边沿
+  .fd-cr { flex-direction:column-reverse; }// 主轴垂直方向，起点在下边沿
+  .fw-n{ flex-wrap: nowrap; } // 不换行
+  .fw-w{ flex-wrap:  wrap; } // 换行，第一行在上方
+  .fw-wr{ flex-wrap: wrap-reverse; } // 换行，第一行在下方。
+
+  // justify-content //对齐方式
+  .jc-l { justify-content: flex-end; } // 右对齐
+  .jc-c { justify-content: center; } // 居中 
+  .jc-sb { justify-content: space-between; } // 两端对齐，项目之间间隔相等  
+  .jc-sa { justify-content: space-around; } // 每个项目两侧的间隔相等，即项目之间的间隔比项目与边框的间隔大一倍
+/*==========margin*/
+.mr5 {  margin-right: 5px;}
+.mr10, .mr {    margin-right: 10px;}
+.mr15 { margin-right: 15px;}
+.mr20 {    margin-right: 20px;}
+.pr10 { padding-right: 10px;}
+.pl10 { padding-left: 10px;}
+.pt10 { padding-top: 10px;}
+
+.pb5 { padding-bottom: 5px;}
+.ml25 {    margin-left: 25px;}
+
+.pt30 {    padding-top: 30px;}
+.mt20, .mtop20 {  margin-top: 20px;}
+.ct {   margin: 0 auto;}
+.ml {   margin-left: 10px;}
+.ml20 {    margin-left: 20px;}
+.mt15 {    margin-top: 15px;}
+.ml5 {  margin-left: 5px;}
+
+.mt5 {  margin-top: 5px;}
+
+.mt, .mtop10 {    margin-top: 10px; }
+.mb,.mb10 {    margin-bottom: 10px;}
+.pad10 {    padding: 10px;}
+.pb10 {    padding-bottom: 10px; }
+/*font-size*/
+.f12, .ft12{ font-size: 12px;}
+
+.f14, .ft14{ font-size: 14px;}
+.ft13 {    font-size: 13px;}
+.f16, .ft16{ font-size: 16px;}
+.ft15 {    font-size: 15px;}
+.ft18 {  font-size: 18px;}
+
+.ft20 { font-size: 20px; }
+
+.ft30 {font-size: 30px;}
